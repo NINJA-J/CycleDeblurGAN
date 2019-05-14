@@ -190,6 +190,9 @@
       <replace>nn.ReLU(True)</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -218,6 +221,7 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -278,6 +282,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -468,12 +473,12 @@
       <workItem from="1556984189109" duration="47702000" />
       <workItem from="1557150795007" duration="3133000" />
       <workItem from="1557190860770" duration="17153000" />
-      <workItem from="1557717075294" duration="10795000" />
+      <workItem from="1557717075294" duration="11237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211576000" />
+    <option name="totallyTimeSpent" value="212018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
