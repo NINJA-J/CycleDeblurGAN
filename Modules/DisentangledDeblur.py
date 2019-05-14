@@ -124,13 +124,17 @@ class DisentangleDeblur(nn.Module):
 
         # Perceptual Loss
         self.pLoss = \
+            self.pLossFn(self.iBlur, self.oBlur) + \
+            self.pLossFn(self.iSharp, self.oSharp) + \
             self.pLossFn(self.iBlur, self.mSharp) + \
             self.pLossFn(self.iSharp, self.mBlur)
 
         # Content/Cycle Loss
         self.cLoss = \
             self.cLossFn(self.iSharp, self.oSharp) + \
-            self.cLossFn(self.iBlur, self.oBlur)
+            self.cLossFn(self.iBlur, self.oBlur) + \
+            self.cLossFn(self.mSharp, self.data['sharp2'].cuda()) +\
+            self.cLossFn(self.mBlur, self.data['blur1'].cuda())
 
         # KL Divergence Loss
         self.klLoss = self.klLossFn(self.mBlurAttr, torch.randn(self.mBlurAttr.size()).cuda())
